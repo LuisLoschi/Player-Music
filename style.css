@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --background-dark: #0F0D13;
+    --background-light: rgb(241, 241, 241);
+
+    --backgroung-player: #135f5f;
+
+    font-size: 62.5%;
+    --font-title: 'Open Sans 700', sans-serif;
+    --font-subtitle: 'Oxygen 300', sans-serif;
+    --font-white: white;
+    --font-gray-light: #E1E1E6;
+}
+
+
+body {
+    background-color: var(--background-dark);    
+}
+
+/*======= Music body =======*/
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.color-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.color-p {
+    margin-right: 1rem;
+    font-family: var(--font-title);
+    color: var(--font-gray-light);
+}
+
+.change-color {
+    border: none;
+    background-color: transparent;
+    width: 2.7rem;
+    height: 3rem;
+    border-radius: 600px;
+    cursor: pointer;
+}
+
+.change-color::-webkit-color-swatch {
+    border-radius: 50%;
+    border: none;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.8rem;
+    padding: 4rem;
+    background-color: var(--backgroung-player);
+    border-radius: 9px;
+
+    min-width: 30rem;
+}
+
+.image-name-music{
+    display: contents;
+    gap: 2.8rem;
+}
+
+/*======= Music image =======*/
+.image-music img{
+    border-radius: 6px;
+    width: 190px;
+    height: 190px;
+}
+
+/*======= Music title =======*/
+.name-music {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+    margin-right: auto;
+}
+
+.title {
+    font-size: 2rem;
+    font-family: var(--font-title);
+    color: var(--font-white);
+}
+
+.subtitle {
+    font-size: 1.7rem;
+    font-family: var(--font-subtitle);
+    color: var(--font-gray-light);
+    opacity: .6;
+
+}
+
+/*======= Music players =======*/
+.players-music {
+    display: flex;
+    justify-content: space-between;
+    align-self: stretch;
+    cursor: pointer;
+}
+
+.pause {
+    display: none;
+}
+
+/*======= Music bar and time =======*/
+.bar-music{
+    display:flex;
+    position: relative;
+    width: 100%;
+}
+
+.line-bar{
+    width: 100%;
+    height: .6rem;
+    background-color: white;
+    border-radius: .3rem;
+    cursor: pointer;
+}
+
+.progress-bar{
+    width: 0%;
+    height: .6rem;
+    background-color: var(--backgroung-player);
+    border-radius: .3rem;
+    opacity: .6;
+    position: absolute;
+    cursor: pointer;
+}
+
+.time-music {
+    display: flex;
+    justify-content: space-between;
+    align-self: stretch;    
+    color: var(--font-gray-light);
+    font-size: 1.5rem;
+}
+
+@media(min-width: 700px) {
+    .page {
+        max-width: 50rem;
+        min-width: 50rem;
+    }
+    .player {
+        gap: 2.8rem;
+        min-width: 48rem;
+    }
+    
+    .image-name-music {
+        display: flex;    
+        justify-content: flex-start;
+        align-self: stretch;    
+    }
+
+    .image-music img{
+        width: 84px;
+        height: 84px;
+        margin-right: 2rem;
+    }
+
+    .players-music {
+        justify-content: center;
+        align-self: stretch;
+        gap: 5rem;
+    }
+}

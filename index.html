@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <title>Music Player</title>
+</head>
+<body>
+    <main>
+        <div class="page">
+            <div class="color-page">
+                <h3 class="color-p">Change Color</h3>
+                <input class="change-color" type="color" value="#135f5f">
+            </div>
+            <div class="player">
+                <div class="image-name-music">
+                    <div class="image-music">
+                        <img id="image" src="" alt="" width="190px" height="190px">
+                    </div>
+                    <div class="name-music">
+                        <h1 class="title">Nome da musica</h1>
+                        <h2 class="subtitle">Nome da Banda/artista</h2>
+                    </div>
+                </div>
+                <audio  src="" id="song"></audio>
+                <div class="players-music">
+                    <img class="play-back" src="./img/icons/play-back.png" alt="">
+                    <img class="play" src="./img/icons/play.png" alt="">
+                    <img class="pause" src="./img/icons/pause.png" height="26"  alt="">
+                    <img class="play-forward" src="./img/icons/play-forward.png" alt="">
+                </div>
+                <div class="bar-music">
+                    <div class="line-bar"></div>
+                    <div class="progress-bar"></div>
+                </div>
+                <div class="time-music">
+                    <div class="start-music">00:00</div>
+                    <div class="end-music">00:00</div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script  src="script.js"></script>
+</body>
+</html>
