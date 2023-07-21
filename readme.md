@@ -16,7 +16,7 @@ Foram desenvolvidas novas funcionalidades ao projeto, como:
 - Responsivo para celular e computador.
 - Liberdade para alterar a cor de fundo.
 
-Você pode visualizar o projeto através [DESSE LINK]().
+Você pode visualizar o projeto através [DESSE LINK](https://luisloschi.github.io/Player-Music/).
 
 ## 🚀 Tecnologias
 Esse projeto foi desenvolvido com as seguintes tecnologias:
